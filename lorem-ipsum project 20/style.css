@@ -1,0 +1,71 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(228, 229, 231);
+}
+
+h3{
+    text-transform: uppercase;
+    color: darkgray;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+.lorem-form{
+
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+
+    font-size: 1.25rem;
+}
+
+input {
+
+    padding: 0.25rem 0.5 rem;
+    width: 4rem;
+    margin: 0 0.5ren;
+    font-size: 1.25rem;
+}
+
+button {
+    background: var(--clr-primary-10);
+  }
+  
+
+
+
+  .btn {
+    text-transform: uppercase;
+    background: blue;
+    color:black ;
+    padding: 0.375rem 0.75rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    border: none;
+    font-size: 0.875rem;
+    margin-left: 5px;
+    cursor: pointer;
+    
+  }
+  .btn:hover {
+    color: var(--clr-primary-5);
+    background: var(--clr-primary-8);
+    border-color: var(--clr-primary-8);
+  }
+
+  .result {
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-bottom: 2rem;
+  }

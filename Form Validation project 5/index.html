@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: aqua;
+        }
+        #cantainer{
+            background-color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1{
+            margin: 0px 0px 10px 0px;
+        }
+
+        input{
+            width:200px;
+            margin: 10px 0px;
+            padding: 10px;
+        }
+
+     input[type="submit"]{
+
+            width: 222px;
+            background-color: blue;
+            border: 0px;
+            color: white;
+        }
+        .errorclass{
+            color: red;
+            margin: 0px;
+            text-align: left;
+
+
+        }
+  </style>
+</head>
+<body>
+    <div id="cantainer">
+        <h1>Login</h1>
+    <form action=""  onsubmit="return validateform()">
+       
+        <input type="text" placeholder="Enter User name" id="username"><br>
+        <p class="errorclass" id="userid"></p>
+        <input type="password" placeholder="Enter Password" id="password"><br>
+        <p class="errorclass" id="passid"></p>
+        <input type="submit" >
+
+    </form>
+</div>
+<script>
+    let username =document.getElementById("username");
+    let password =document.getElementById("password");    
+    let flag=1;
+    function validateform(){
+        if(username.value==""){
+        document.getElementById("userid").innerHTML="Please Enter User Name";
+        flag=0;
+        }
+        else if(username.value.length < 3){
+            document.getElementById("userid").innerHTML="User Name Required Min 3 character";
+            flag=0;
+        }
+        else{
+            document.getElementById("userid").innerHTML="";
+            flag=1;
+        }
+
+        if(password.value==""){
+            document.getElementById("passid").innerHTML="Please Enter Password";
+            flag=0;
+        }
+        else{
+            document.getElementById("passid").innerHTML="";
+            flag=1;
+        }
+        if(flag){
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+</script>
+   </body>
+    
+
+</html>

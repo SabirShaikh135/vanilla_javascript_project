@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <style>
+        body{
+            padding: 50px 100px;
+
+        }
+
+        h1{
+            background-color: rgb(95, 95, 172);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        #textbox{
+            width: 99.5%;
+            height: 250px;
+            border-color: rgb(95, 95, 172);;
+        }
+        P{
+            text-align: center;
+            background-color: rgb(95, 95, 172); 
+            padding: 10px;
+            margin: 0px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Word and Character Counter</h1>
+    <textarea  id="textbox" placeholder="Enter Your Sentense"></textarea>
+    <p><span id="char">0</span>  Character and <span id="word">0</span>  Word</p>
+
+    <script>    
+
+        let textbox=document.getElementById("textbox");              //asign textarea id
+        textbox.addEventListener('input',function(){              //asign input listner to text area 
+
+             let text= this.value;                               // get value to text area 
+            let char=text.length;                              //  find length of text into text area
+            
+            document.getElementById("char").innerHTML=char;     //asign id to word and set charter count
+             text = text.trim();                                //trim the extra white space on text
+            let word=text.split(" ");                           //split the wors into white space
+            let cleantext =word.filter(function(elm){           //fillter betwen extra white space into the text with annonumas funtion
+                return elm != "";
+                
+            });
+            document.getElementById("word").innerHTML=cleantext.length; //show the char into char
+            console.log(cleantext);
+
+
+        });
+
+    </script>
+
+
+</body>
+</html>

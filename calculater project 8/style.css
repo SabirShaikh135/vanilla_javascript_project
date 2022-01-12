@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+}
+
+.input-div{
+    display: flex;
+    justify-content: center;
+}
+
+.button-div{
+    
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px; 
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-gap: 5px;
+    padding-left: 20px;
+    margin-top: 22px;
+    
+     
+}
+.cantainer{
+    margin-top: 80px;;
+    margin-left: 555px;
+    margin-right: 555px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    background-color: rgb(179, 179, 223);border: 1px solid black;
+    /* display: flex;
+    justify-content: center; */
+
+}
+
+#input-text{
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+
+
+    

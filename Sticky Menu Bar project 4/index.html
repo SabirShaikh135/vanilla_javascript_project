@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Menu Bar</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+        }
+        #logo{
+            width: 200px;
+            height: auto;
+        }
+
+        #menu-bar{
+            text-align: center;
+            background-color: cadetblue;
+
+        }
+
+        #menu-bar li{
+            text-decoration: none;
+            display: inline-block;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            
+
+        }
+        #menu-bar li a{
+            text-decoration: none;
+            color: white;
+
+            
+        }
+
+        #cantainer{
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #aboutimg{
+            width: 100%;
+        }
+        #pid{
+            text-align: justify;
+        }
+
+        .sticky{
+            position: fixed;
+            top:0px;
+            width:100% ;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+    <img src="tree.jpg" alt="tree" id="logo" >
+</div>
+<nav id="menu-bar" >
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Services</a></li>
+    <li><a href="">Team</a></li>
+    <li><a href="">Contact</a></li>
+</nav>
+<div id="cantainer">
+<h1>About</h1>
+<img src="About-Us.png" alt ="about" id="aboutimg"> 
+<p id="pid">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ut fugiat natus quibusdam, veniam totam quia, ex perspiciatis dolorum esse ad consequuntur dicta quo corporis, molestias aperiam voluptates eligendi repudiandae?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ut fugiat natus quibusdam, veniam totam quia, ex perspiciatis dolorum esse ad consequuntur dicta quo corporis, molestias aperiam voluptates eligendi repudiandae?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ut fugiat natus quibusdam, veniam totam quia, ex perspiciatis dolorum esse ad consequuntur dicta quo corporis, molestias aperiam voluptates eligendi repudiandae?    
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ut fugiat natus quibusdam, veniam totam quia, ex perspiciatis dolorum esse ad consequuntur dicta quo corporis, molestias aperiam voluptates eligendi repudiandae?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ut fugiat natus quibusdam, veniam totam quia, ex perspiciatis dolorum esse ad consequuntur dicta quo corporis, molestias aperiam voluptates eligendi repudiandae?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ut fugiat natus quibusdam, veniam totam quia, ex perspiciatis dolorum esse ad consequuntur dicta quo corporis, molestias aperiam voluptates eligendi repudiandae?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ut fugiat natus quibusdam, veniam totam quia, ex perspiciatis dolorum esse ad consequuntur dicta quo corporis, molestias aperiam voluptates eligendi repudiandae?    
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ut fugiat natus quibusdam, veniam totam quia, ex perspiciatis dolorum esse ad consequuntur dicta quo corporis, molestias aperiam voluptates eligendi repudiandae?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ut fugiat natus quibusdam, veniam totam quia, ex perspiciatis dolorum esse ad consequuntur dicta quo corporis, molestias aperiam voluptates eligendi repudiandae?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ut fugiat natus quibusdam, veniam totam quia, ex perspiciatis dolorum esse ad consequuntur dicta quo corporis, molestias aperiam voluptates eligendi repudiandae?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ut fugiat natus quibusdam, veniam totam quia, ex perspiciatis dolorum esse ad consequuntur dicta quo corporis, molestias aperiam voluptates eligendi repudiandae?    
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ut fugiat natus quibusdam, veniam totam quia, ex perspiciatis dolorum esse ad consequuntur dicta quo corporis, molestias aperiam voluptates eligendi repudiandae?
+</p>
+</div>
+
+</body>
+
+<script>
+window.addEventListener('scroll',function(){
+let navbaar=document.getElementById("menu-bar");
+if(window.pageYOffset >=190){
+    navbaar.classList.add("sticky");
+}
+else{
+    navbaar.classList.remove("sticky");
+}
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

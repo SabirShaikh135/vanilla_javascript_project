@@ -1,0 +1,105 @@
+*,
+::before,
+::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.gift-img{
+    margin-bottom: 2rem;
+}
+
+.gift-info h3{
+    text-transform: uppercase;
+    color: blue;
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.gift-info h{
+
+    margin-bottom: -40px;
+}
+
+.date {
+    color: gray;
+    font-size: 0.85rem;
+  }
+
+@media screen and (min-width: 992px) {
+    
+    .section-center{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        gap: 3rem;
+        width: 95vw;
+    }
+
+    .gift-img{
+        margin-bottom: 0;
+    }
+}
+
+.gift-info p{
+    margin: 2rem 0;
+}
+
+.deadline{
+    display: flex;
+}
+
+.deadline-format{
+
+background: rgb(28, 39, 73);
+color: white;
+margin-right: 1rem;
+width: 5rem;
+height: 5rem;
+display: grid;
+place-items: center;
+text-align: center;
+}
+
+.deadline-format span{
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.deadline h4:not(.expired){
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+    letter-spacing: 2px;
+}
+
+.gift-img ,.img1{
+
+    height: 350px;
+    width: 550px;
+} 
+
+.section-center{
+    padding: 80px 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

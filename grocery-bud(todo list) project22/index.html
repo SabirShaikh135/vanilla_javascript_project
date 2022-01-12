@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <!-- <meta http-equiv="Refresh" content="1000"> -->
+    <title>grocery-bud</title>
+</head>
+<body>
+
+    <section class="center">
+        <form action="" class="form">
+            <header>
+                <div class="head-cantainer">
+                    <div class="row">
+                        <div class="col-header">
+                            <h1 id="header-title">Item listner</h1>
+                        </div>
+                        <div class="col-input">
+                            <input type="text" id="filter" placeholder="search item" class="textinput">
+                        </div>  
+                    </div>
+                </div>
+            </header>
+            <p class="alert"></p>
+            <h3>grocery-bud</h3>
+            <div class="form-control">
+                <input type="text" id="grocery" placeholder="eg: eggs"/>
+                <button type="submit" class="submit_btn">Submit</button>
+            </div>
+        </form>
+        <div class="grocery-cantainer">
+            <div class="grocery-list"></div>
+            <button class="clear">Clear Item</button>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

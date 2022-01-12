@@ -1,0 +1,158 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: var(--ff-secondary); */
+  /* background: var(--clr-grey-10); */
+  /* color: var(--clr-grey-1); */
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+
+
+
+.hero{
+    min-height: 100vh;
+    background: url("./hero.jpeg") center/cover no-repeat;
+    display: grid;
+    place-items: center;
+}
+.banner{
+    background: white;
+    padding: 4rem 0rem;
+    border-radius: 8px;
+    box-shadow: lightgrey;
+    text-align: center;
+    width: 90vw;
+    max-width: 620px;
+
+    letter-spacing: 3px;
+    text-transform: capitalize;
+     line-height: 1.25;
+     margin-bottom: 0.75rem;
+    font-size: 2rem;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+.model-btn{
+    margin-top: 2rem;
+    background: rgb(134, 134, 226);
+    border-color: rgb(134, 134, 226);
+    color: white;
+    letter-spacing: 3px;
+    padding: 7px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+
+}
+
+.model-btn:hover{
+    background: transparent;
+    color: rgb(134, 134, 226);;
+}
+
+.modal-overlay{
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(73, 166, 233, 0.5);
+    display: grid;
+    place-items: center;
+    z-index: -10;
+    visibility: hidden;
+}
+
+.open-modal
+{
+    visibility: visible;
+    z-index: 10;
+}
+
+.modal-cantainer{
+
+    background: white;
+    border-radius: 10px;
+    width: 90vw;
+    height: 30vh;
+    max-width: 620px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+    font-size: 3rem;
+}
+
+.close-btn{
+
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: transparent;
+    font-size: 2rem;
+    color: darkred;
+}
+
+.close-btn:hover{
+
+    color: rgb(211, 125, 125);
+    animation: zoom 1s ;
+}
+
+@keyframes zoom {
+    100%{transform:scale(1.3);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
